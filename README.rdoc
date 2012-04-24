@@ -40,7 +40,7 @@ TablePrint tries to use sensible defaults to choose the columns to show. If you'
 uses the ActiveRecord column names. You can customize the output to show fewer columns, or show other methods you've written
 on your model.
 
-  # Maybe you story a user's hourly rate but you want to see their yearly income
+  # Maybe you store a user's hourly rate but you want to see their yearly income
   > tp User.limit(30), {:include => :yearly_income, :except => :hourly_rate}
 
   # Maybe all you care about is their mailing info
